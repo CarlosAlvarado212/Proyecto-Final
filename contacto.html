@@ -1,0 +1,155 @@
+<!-- Apertura del elemento html - contenedor raíz del documento -->
+<html>
+
+<!-- Sección head - contiene metadatos y enlaces a recursos externos -->
+<head>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Pet Paradise - Contáctanos</title>
+    <!-- Enlace a hoja de estilos CSS externa -->
+    <link href="css\EstilosServis.css" rel="stylesheet" type="text/css">
+    <!-- Etiqueta style para CSS interno (actualmente vacía) -->
+    <style>
+
+    </style>
+</head>
+
+<!-- Cuerpo del documento - contiene todo el contenido visible -->
+<body>
+    <!-- Cabecera de la página con clase para estilos -->
+    <header class="encabezado">
+        <!-- Encabezado principal de la página -->
+        <h1>Pet Paradise</h1>
+        <!-- Lista no ordenada para el menú de navegación -->
+        <ul>
+			<!-- Elemento de lista con enlace a página "Inicio" -->
+			<li><a href="index.html">Inicio</a></li>
+            <!-- Elemento de lista con enlace a página "Quienes somos" -->
+            <li><a href="quienes_somos.html">Quienes somos</a></li>
+            <!-- Elemento de lista con enlace a página "Productos y Servicios" -->
+            <li><a href="Productos y Servicios.html">Productos y Servicios</a></li>
+            <!-- Elemento de lista con enlace a página actual "Contáctanos" -->
+            <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+    </header>
+
+    <!-- Contenedor principal para el contenido del formulario -->
+    <div class="contenedor">
+        <!-- Título de la sección de contacto -->
+        <h2 class="titulo-seccion">Contáctanos</h2>
+
+        <!-- Formulario de contacto con clase para estilos -->
+        <form class="formulario-contacto">
+            <!-- Grupo de campo para el nombre -->
+            <div class="grupo-formulario">
+                <!-- Etiqueta para el campo nombre -->
+                <label for="nombre">Nombre del cliente</label>
+                <!-- Campo de entrada de texto para el nombre -->
+                <input type="text" id="nombre" name="nombre">
+            </div>
+
+            <!-- Grupo de campo para el número de celular -->
+            <div class="grupo-formulario">
+                <!-- Etiqueta para el campo celular -->
+                <label for="celular">Celular</label>
+                <!-- Campo de entrada para número telefónico -->
+                <input type="tel" id="celular" name="celular">
+            </div>
+
+            <!-- Grupo de campo para el correo electrónico -->
+            <div class="grupo-formulario">
+                <!-- Etiqueta para el campo email -->
+                <label for="mail">Correo electrónico</label>
+                <!-- Campo de entrada para dirección de email -->
+                <input type="email" id="mail" name="mail">
+            </div>
+
+            <!-- Grupo de campo para selección de servicio -->
+            <div class="grupo-formulario">
+                <!-- Etiqueta para el selector de servicios -->
+                <label for="servicio">Tipo de servicio o producto</label>
+                <!-- Lista desplegable para seleccionar servicio/producto -->
+                <select id="servicio" name="servicio">
+                    <!-- Opción por defecto vacía -->
+                    <option value="">Selecciona una opción</option>
+                    <!-- Opción para nutrición orgánica de perros -->
+                    <option value="nutricion">Nutrición orgánica para perros</option>
+                    <!-- Opción para árboles de gatos -->
+                    <option value="arbol">Árboles para gatos de lujo</option>
+                    <!-- Opción para sistemas de acuario -->
+                    <option value="acuario">Sistemas de acuario</option>
+                    <!-- Opción para entrenamiento de obediencia -->
+                    <option value="entrenamiento">Entrenamiento de obediencia</option>
+                    <!-- Opción para hotel de mascotas -->
+                    <option value="hotel">Hotel de lujo para mascotas</option>
+                    <!-- Opción para fotografía de mascotas -->
+                    <option value="fotografia">Fotografía de mascotas</option>
+                </select>
+            </div>
+
+            <!-- Grupo de campo para la cantidad -->
+            <div class="grupo-formulario">
+                <!-- Etiqueta para el campo cantidad -->
+                <label for="cantidad">Cantidad</label>
+                <!-- Campo numérico con valor mínimo de 1 -->
+                <input type="number" id="cantidad" name="cantidad" min="1">
+            </div>
+
+            <!-- Grupo de campo para forma de pago -->
+            <div class="grupo-formulario">
+                <!-- Etiqueta general para el grupo de pago -->
+                <label>Forma de pago</label>
+                <!-- Contenedor para opción de tarjeta -->
+                <div>
+                    <!-- Radio button para pago con tarjeta -->
+                    <input type="radio" id="tarjeta" name="pago" value="tarjeta">
+                    <!-- Etiqueta inline para tarjeta con estilos en línea -->
+                    <label for="tarjeta" style="display: inline; margin-left: 5px;">Tarjeta</label>
+                </div>
+                <!-- Contenedor para opción de depósito -->
+                <div>
+                    <!-- Radio button para pago con depósito -->
+                    <input type="radio" id="deposito" name="pago" value="deposito">
+                    <!-- Etiqueta inline para depósito con estilos en línea -->
+                    <label for="deposito" style="display: inline; margin-left: 5px;">Depósito</label>
+                </div>
+                <!-- Contenedor para opción de pago en Oxxo -->
+                <div>
+                    <!-- Radio button para pago en Oxxo -->
+                    <input type="radio" id="oxxo" name="pago" value="oxxo">
+                    <!-- Etiqueta inline para Oxxo con estilos en línea -->
+                    <label for="oxxo" style="display: inline; margin-left: 5px;">Pago en Oxxo</label>
+                </div>
+            </div>
+
+            <!-- Grupo de campo para comentarios adicionales -->
+            <div class="grupo-formulario">
+                <!-- Etiqueta para el área de texto de comentarios -->
+                <label for="comentarios">Comentarios adicionales (opcional)</label>
+                <!-- Área de texto multilínea para comentarios -->
+                <textarea id="comentarios" name="comentarios"></textarea>
+            </div>
+
+            <!-- Contenedor para los botones del formulario -->
+            <div class="grupo-botones">
+                <!-- Botón para enviar el formulario -->
+                <button type="submit" class="btn btn-enviar">Enviar</button>
+                <!-- Botón para resetear/borrar el formulario -->
+                <button type="reset" class="btn btn-borrar">Borrar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="pie">
+        <!-- Texto de copyright y redes sociales -->
+        <p>© 2025 Pet Paradise - Donde nuestras mascotas son familia | Síguenos en todas nuestras redes sociales</p>
+		<p>Desarrollado por: <br>
+           <strong>Carlos Ramiro Alvarado Sánchez</strong> • 
+           <strong>Jimena Hueramo Ortiz</strong> • 
+           <strong>Claudia Zihuapilli Roa Serna</strong>
+        </p>
+    </footer>
+</body>
+
+<!-- Cierre del elemento html -->
+</html>
